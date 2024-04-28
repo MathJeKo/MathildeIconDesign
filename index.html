@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 40px auto 40px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:50px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="Mystery" src="img/MysteryX.png" height="150" width="150"/></div>
+            <div class="image-container"><img id="Comic" src="img/ComicX.png" height="150" width="150"/></div>
+            <div class="image-container"><img id="MagicalR" src="img/MagicalRX.png" height="150" width="150"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="Thriller" src="img/ThrillerX.png" height="150" width="150"/></div>
+            <div class="image-container"><img id="Fantasy" src="img/FantasyX.png" height="150" width="150"/></div>
+            <div class="image-container"><img id="Romance" src="img/RomanceX.png" height="150" width="150"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="SciFi" src="img/SciFiX.png" height="150" width="150"/></div>
+            <div class="image-container"><img id="Crime" src="img/CrimeX.png" height="150" width="150"/></div>
+            <div class="image-container"><img id="Horror" src="img/HorrorX.png" height="150" width="150"/></div>
+        </div>
+
+        <img src="img/ThrillerX.png" onmouseover="this.src='img/ThrillerXX.png';" onmouseout="this.src='img/ThrillerX.png';"/>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/ThrillerPiano.wav");
+            var sound2 = new buzz.sound("sound/FantasyPiano.wav");
+            var sound3 = new buzz.sound("sound/RomancePiano.wav");
+            var sound4 = new buzz.sound("sound/MysteryPiano.wav");
+            var sound5 = new buzz.sound("sound/ComicsPiano.wav");
+            var sound6 = new buzz.sound("sound/SciFiPiano.wav");
+            var sound7 = new buzz.sound("sound/MagicalRPiano.wav");
+            var sound8 = new buzz.sound("sound/HorrorPiano.wav");
+            var sound9 = new buzz.sound("sound/CrimePiano.wav");
+
+            window.onload = function() { 
+                document.getElementById('Thriller').addEventListener('click', function () {sound1.play();});
+                document.getElementById('Fantasy').addEventListener('click', function () {sound2.play();});
+                document.getElementById('Romance').addEventListener('click', function () {sound3.play();});
+                document.getElementById('Mystery').addEventListener('click', function () {sound4.play();});
+                document.getElementById('Comic').addEventListener('click', function () {sound5.play();});
+                document.getElementById('SciFi').addEventListener('click', function () {sound6.play();});
+                document.getElementById('MagicalR').addEventListener('click', function () {sound7.play();});
+                document.getElementById('Horror').addEventListener('click', function () {sound8.play();});
+                document.getElementById('Crime').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+    
+
+</html>
