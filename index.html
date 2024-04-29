@@ -14,7 +14,10 @@
             .image-container {
                 display: table-cell;
                 vertical-align: middle;
-                padding:50px;
+                padding-top:15px;
+                padding-bottom:15px;
+                padding-left:40px;
+                padding-right:40px;
             }
         </style>
     </head>
@@ -22,24 +25,73 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id="Mystery" src="img/MysteryX.png" height="150" width="150"/></div>
-            <div class="image-container"><img id="Comic" src="img/ComicX.png" height="150" width="150"/></div>
-            <div class="image-container"><img id="MagicalR" src="img/MagicalRX.png" height="150" width="150"/></div>
+            <div class="image-container">
+                <img id="Mystery" src="img/MysteryXX.png"  height="150" width="150"
+                onmouseover="this.src='img/MysteryX.png';"
+                onmouseout="this.src='img/MysteryXX.png';"
+                />
+            </div>
+            
+            <div class="image-container">
+                <img id="Comic" src="img/ComicXX.png" height="150" width="150"
+                onmouseover="this.src='img/ComicX.png';"
+                onmouseout="this.src='img/ComicXX.png';"
+                />
+            </div>
+
+            <div class="image-container">
+                <img id="MagicalR" src="img/MagicalRXX.png" height="150" width="150"
+                onmouseover="this.src='img/MagicalRX.png';"
+                onmouseout="this.src='img/MagicalRXX.png';"
+                />
+            </div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img id="Thriller" src="img/ThrillerX.png" height="150" width="150"/></div>
-            <div class="image-container"><img id="Fantasy" src="img/FantasyX.png" height="150" width="150"/></div>
-            <div class="image-container"><img id="Romance" src="img/RomanceX.png" height="150" width="150"/></div>
+            <div class="image-container">
+                <img id="Thriller" src="img/ThrillerXX.png" height="150" width="150"
+                onmouseover="this.src='img/ThrillerX.png';"
+                onmouseout="this.src='img/ThrillerXX.png';"
+                />
+            </div>
+
+            <div class="image-container">
+                <img id="Fantasy" src="img/FantasyXX.png" height="150" width="150"
+                onmouseover="this.src='img/FantasyX.png';"
+                onmouseout="this.src='img/FantasyXX.png';"
+                />
+            </div>
+
+            <div class="image-container">
+                <img id="Romance" src="img/RomanceXX.png" height="150" width="150"
+                onmouseover="this.src='img/RomanceX.png';"
+                onmouseout="this.src='img/RomanceXX.png';"
+                />
+            </div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img id="SciFi" src="img/SciFiX.png" height="150" width="150"/></div>
-            <div class="image-container"><img id="Crime" src="img/CrimeX.png" height="150" width="150"/></div>
-            <div class="image-container"><img id="Horror" src="img/HorrorX.png" height="150" width="150"/></div>
-        </div>
+            <div class="image-container">
+                <img id="SciFi" src="img/SciFiXX.png" height="150" width="150"
+                onmouseover="this.src='img/SciFiX.png';"
+                onmouseout="this.src='img/SciFiXX.png';"
+                />
+            </div>
 
-        <img src="img/ThrillerX.png" onmouseover="this.src='img/ThrillerXX.png';" onmouseout="this.src='img/ThrillerX.png';"/>
+            <div class="image-container">
+                <img id="Crime" src="img/CrimeXX.png" height="150" width="150"
+                onmouseover="this.src='img/CrimeX.png';"
+                onmouseout="this.src='img/CrimeXX.png';"
+                />
+            </div>
+
+            <div class="image-container">
+                <img id="Horror" src="img/HorrorXX.png" height="150" width="150"
+                onmouseover="this.src='img/HorrorX.png';"
+                onmouseout="this.src='img/HorrorXX.png';"
+                />
+            </div>
+        </div>
         
         <script>
             var sound1 = new buzz.sound("sound/ThrillerPiano.wav");
